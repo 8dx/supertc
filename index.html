@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>android.rtc</title>
+  <meta name="description" content="">
+  <meta name="author" content="ozzmotik">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- JAVASCRIPT
+  -------------------------------------------------- -->
+
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src='js/lz-string.min.js'></script>
+  <script src="js/mobile.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Tangerine|Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="three-quarters column" id='content'>
+        <h4>android webrtc</h4>
+        <button class='button-primary' id='rtc'>initiate webrtc</button>
+        <div class='space'></div>
+        <video id='live_video' autoplay style='display: none'></video>
+        <canvas id='cur_frame' width='300px' height='300px'></canvas>
+        <form id='canvas_text'>
+          <input type='text' id='textlayer' style='display: none; width: 100%' placeholder='type some text, hit enter...' />
+          <input type='submit' style='display: none' />
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

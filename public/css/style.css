@@ -1,0 +1,23 @@
+#content {
+  margin-top: 5%;
+  font-family: monospace;
+}
+p {
+  margin: 0;
+}
+p:last-of-type {
+  margin-bottom: 8px;
+}
+
+.space { 
+  margin: 16px;
+}
+
+p:first-letter {
+  font-size: 300%;
+  font-weight: bolder;
+  margin: 0 4px 0 10px;
+  text-transform: uppercase;
+  font-family: 'Tangerine', cursive;
+}
+
